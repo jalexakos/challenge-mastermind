@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 import axios from 'axios';
 import { CSSTransition } from 'react-transition-group';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import Guess from '../Guess/Guess';
 import classes from './Easy.module.css';
@@ -104,22 +107,22 @@ const compareNums = e => {
     setCounter(counter - 1);
 };
 
-const pastGuesses = guesses.map(data => <CSSTransition timeout={1000} in={true} key={Math.random()*Math.random()*100}><Guess message={data.message} answer={data.answerArray} /></CSSTransition>)
+const pastGuesses = guesses.map(data => <Guess message={data.message} answer={data.answerArray} key={Math.random()*Math.random()*100} />)
 
  if (counter <= 0){
      button = null;
  }
 
  return(
-     <div>
-         <br />
-        <div>
-            {pastGuesses}
-        </div>
-         <br />
-         <br />
-         <div>
+     <Container>
+         <Row className={classes.topRow}>
+
+         </Row>
+        <Row>
+         <Col>
+
          <h3>Guesses Left: {counter}</h3>
+
          <form onSubmit={compareNums}>
              <div>
                  <h5>Choose Number 1!</h5>
@@ -231,10 +234,16 @@ const pastGuesses = guesses.map(data => <CSSTransition timeout={1000} in={true} 
              </div>
              {button}
          </form>
-         </div>
-        <br />
+         </Col>
+        <Col>
+            {pastGuesses}
+        </Col>
          {randomNums}
-     </div>
+         </Row>
+         <Row className={classes.bottomRow}>
+
+        </Row>
+     </Container>
  );
 };
 

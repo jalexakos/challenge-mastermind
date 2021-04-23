@@ -1,0 +1,17 @@
+h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Row {
+    margin-top: auto;
+    margin-bottom: auto;
+} */
+
+.topRow {
+    height: 200px;
+}
+
+.bottomRow {
+    height: 200px;
+}
