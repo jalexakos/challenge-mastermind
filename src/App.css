@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+  background-color: white;
+  font-family: 'Spartan', sans-serif;
+}
+
+input {
+  margin: 0.75%;
+}
