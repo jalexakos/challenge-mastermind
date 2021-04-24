@@ -6,6 +6,7 @@ const Guess = props => {
         <div className="Guess">
             <p className="messageText">{props.message}</p>
             <p className="messageText">Your Guess: {props.answer}</p>
+            <p>Attempt Number: {props.attempt}</p>
         </div>
     )
 };
