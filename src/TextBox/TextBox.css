@@ -1,8 +1,8 @@
-.Guess {
+.textBox {
     border: none;
     border-radius: 3px;
     height: auto;
-    width: auto;
+    width: 100%;
     text-align: center;
     margin: auto;
     margin-top: 1%;
@@ -15,9 +15,3 @@
 .messageText {
     font-size: large;
 }
-
-.yourGuess {
-    font-size: large;
-    font-weight: bold;
-    font-style: italic;
-};
