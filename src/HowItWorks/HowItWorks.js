@@ -25,12 +25,15 @@ const HowItWorks = () => {
                 </Col>
                 <Col>
                     <h3>How does it work?</h3>
+                    <TextBox content="First, you have to click 'Play' (in the top right)." />
+                    <TextBox content="On the top of the page, you'll see the couple of dropdown options. You don't have to do anything with those. But if you want to change either the number of guesses you get or how many random numbers you have to guess, you can change them with those dropdowns." />
+                    <TextBox content="WARNING: changing the number of guesses or number of random numbers resets the game entirely! Don't hit Submit unless you want to start over." />
                     <TextBox content="On the left side of the screen, you'll see rows of buttons. Those are the possible numbers you can choose."  />
                     <TextBox content="Above the numbers, you'll see your counter. It tells you how many guesses you have left."  />
                     <TextBox content="Below the buttons, there's the submit button. Once you click that, the computer will compare your numbers to its numbers. If they're the same, you'll win!"  />
                     <TextBox content="If there are no matches at all, the computer will tell you on the right side of the screen."  />
-                    <TextBox content="If at least one of the numbers you picked was in the numbers the computer picked, it will tell you."  />
-                    <TextBox content="If you picked at least one number in the correct location, the computer will tell you. But that's all it'll give you! So guess carefully."  />
+                    <TextBox content="If one (or more) of the numbers you picked was in the numbers the computer picked, it will tell you."  />
+                    <TextBox content="If you picked one (or more) numbers in the correct location, the computer will tell you that, too."  />
                 </Col>
             </Row>
         </Container>

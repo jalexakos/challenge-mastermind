@@ -1,6 +1,9 @@
 # Challenge Mastermind
 
-## To Use
+## Live Version
+
+Check out the live version of my game [here](https://challenge-mastermind-game.herokuapp.com/).
+## To Run
 
 Run `npm install` to install all dependencies.
 
@@ -8,74 +11,26 @@ Run `npm start` to run on a local server (generally http://localhost:3000/).
 
 Refresh the page to reset the game (this will generate a completely new number).
 
+## Thought Process / Build Philosophy
 
-# Getting Started with Create React App
+My build philosophy had four stages:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Build basic functionality
+2. Sharpen up UI
+3. Add more features
+4. Refactor code for efficiency
 
-## Available Scripts
+My thought process was simple: I imagined the game as a basic web game. If someone showed up to my page without any previous knowledge of it, how would they learn what the game is and how to play? That informed the features I added, like a home page and a "How It Works" page. My hope is that someone random could happen upon it and use it without issue.
 
-In the project directory, you can run:
+That same thought process guided how I structured the user interface and which features I added. I wanted the page to look good and be easily useable. I also figured that someone might get bored of the basic features of the game. What if they could increase or decrease the difficulty level by changing the number of random numbers they would be guessing against, and how many guesses they could use? That drove me to add user adjustment capabilities for both of those aspects of the game.
 
-### `npm start`
+Finally, I tried to refine my code by making elements more efficient. Specific to React as a web framework, I wanted to make any feature I used frequently into a re-usable component, if possible. This makes the final code simpler, and means future tweaks are easier to implement (as I can make changes in one place rather than seven, for example).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Further Improvements
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Some areas I would like to explore with this project:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Making it mobile friendly
+    * Making the game accessible on smartphones is the next, biggest step. I would need to adjust the layout significantly to make it functional and easy to use.
+* Refactor Play Component
+    * The Play component is the heart of this project. Unsurprisingly, it has the longest code. I think there are a few spaces where I can tighten things up. For example, the `compareNums` function was a challenge to build, though it was a success. There are places where I can sharpen up the logic to improve efficiency, as well as spots where I can clean up the code with simple functions.
